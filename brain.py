@@ -4,7 +4,7 @@ import os
 # 1. Conectando o Cérebro (Cole sua chave da API do Google AI Studio aqui)
 CHAVE_API = "SUA_CHAVE_AQUI"
 genai.configure(api_key=CHAVE_API)
-modelo = genai.GenerativeModel('gemini-3.8-flash')
+modelo = genai.GenerativeModel('gemini-3.6-flash')
 
 print("🧠 Iniciando o Brain Net...")
 
