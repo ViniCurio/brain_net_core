@@ -1,18 +1,10 @@
-import os
-import sys
-
 import google.generativeai as genai
+import os
 
-sys.stdout.reconfigure(encoding="utf-8")
-
-
-# 1. Conectando o Cérebro
-CHAVE_API = os.getenv("GEMINI_API_KEY")
-if not CHAVE_API:
-    raise SystemExit("Erro: defina GEMINI_API_KEY antes de iniciar o Brain Net.")
-
+# 1. Conectando o Cérebro (Cole sua chave da API do Google AI Studio aqui)
+CHAVE_API = "SUA_CHAVE_AQUI"
 genai.configure(api_key=CHAVE_API)
-modelo = genai.GenerativeModel("gemini-3.8-flash")
+modelo = genai.GenerativeModel('gemini-3.8-flash')
 
 print("🧠 Iniciando o Brain Net...")
 
@@ -23,7 +15,7 @@ try:
     print("✅ Base de conhecimento carregada com sucesso!\n")
 except FileNotFoundError:
     print("❌ Erro: Arquivo 'base_conhecimento.txt' não encontrado.")
-    raise SystemExit(1)
+    exit()
 
 # 3. Loop do Chat (O Terminal Interativo)
 print("💬 Converse com o Brain Net (Digite 'sair' para encerrar)")
@@ -32,7 +24,7 @@ print("-" * 50)
 while True:
     pergunta = input("\n👤 Você: ")
 
-    if pergunta.lower() == "sair":
+    if pergunta.lower() == 'sair':
         print("Desligando o Brain Net...")
         break
 
