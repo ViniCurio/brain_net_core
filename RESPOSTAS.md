@@ -4,7 +4,7 @@
 
 O código está em `brain.py` e os dados fictícios da empresa estão em `base_conhecimento.txt`.
 
-**Link do GitHub:** aguardando a URL do repositório para publicar os arquivos e preencher este item.
+**Link do GitHub:** [ViniCurio/brain_net_core](https://github.com/ViniCurio/brain_net_core).
 
 ## 2. A Regra de Ouro (Prompt)
 
